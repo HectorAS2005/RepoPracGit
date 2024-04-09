@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando Find en Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comando <code>find</code> en Linux</h1>
+    <p>El comando <code>find</code> se utiliza para buscar archivos y directorios en el sistema de archivos de Linux.</p>
+    
+    <h2>Sintaxis básica:</h2>
+    <pre>
+        <code>find [directorio] [opciones] [patrón]</code>
+    </pre>
+    
+    <h2>Ejemplos de uso:</h2>
+    <ul>
+        <li>
+            <p><strong>Buscar archivos por nombre:</strong></p>
+            <pre>
+                <code>find /home/usuario -name "*.txt"</code>
+            </pre>
+            <p>Este comando buscará todos los archivos con extensión <code>.txt</code> en el directorio <code>/home/usuario</code> y sus subdirectorios.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar archivos modificados en los últimos 7 días:</strong></p>
+            <pre>
+                <code>find /var/log -mtime -7</code>
+            </pre>
+            <p>Este comando buscará todos los archivos en el directorio <code>/var/log</code> que hayan sido modificados en los últimos 7 días.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar archivos grandes (más de 100 MB):</strong></p>
+            <pre>
+                <code>find /home -size +100M</code>
+            </pre>
+            <p>Este comando buscará todos los archivos en el directorio <code>/home</code> que tengan un tamaño mayor a 100 megabytes.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar y eliminar archivos:</strong></p>
+            <pre>
+                <code>find /tmp -name "temp*" -exec rm -rf {} \;</code>
+            </pre>
+            <p>Este comando buscará todos los archivos en el directorio <code>/tmp</code> que comiencen con "temp" en su nombre y los eliminará.</p>
+        </li>
+    </ul>
+</body>
+</html>
