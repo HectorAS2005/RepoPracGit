@@ -3,5 +3,5 @@
 <hr>
 Este repositorio pertenece a Héctor Aparicio <br>
 <a href="https://github.com/Neke33/manual">Repositorio de Oyola</a> <br>
-<a href="">Repositorio de Christian</a><br>
+<a href="https://github.com/Itzchriis/comandos">Repositorio de Christian</a><br>
 <a href="https://github.com/Choc2056/Comandos">Repositorio de Jorge</a>
